@@ -10,7 +10,7 @@ public:
 	~MyString();
 	MyString(const MyString& obj);
 
-	MyString(MyString&& obj5);
+	MyString(MyString&& obj);
 	void Test(MyString a);
 
 	bool MyStrStr(const char* str);

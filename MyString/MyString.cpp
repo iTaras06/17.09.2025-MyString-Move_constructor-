@@ -30,12 +30,12 @@ MyString::MyString(const MyString& obj)
 	strcpy_s(str, length + 1, obj.str);
 }
 
-MyString::MyString(MyString&& obj5)
+MyString::MyString(MyString&& obj)
 {
-	str = obj5.str;
-	obj5.str = nullptr;
-	length = obj5.length;
-	obj5.length = 0;
+	str = obj.str;
+	obj.str = nullptr;
+	length = obj.length;
+	obj.length = 0;
 	cout << "Move constructor\n";
 }
 void MyString::Test(MyString a)
